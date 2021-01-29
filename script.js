@@ -1,28 +1,42 @@
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+const constraints = {
+  name: {
+      presence: { allowEmpty: false }
+  },
+  email: {
+      presence: { allowEmpty: false },
+      email: true
+  },
+  tel: {
+      presence: { allowEmpty: false }
+  },
+  asunto: {
+      presence: { allowEmpty: false }
+  },
+  message: {
+      presence: { allowEmpty: false }
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+};
+
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', function (event) {
+const formValues = {
+    name: form.elements.name.value,
+    email: form.elements.email.value,
+    tel: form.elements.tel.value,
+    asunto: form.elements.asunto.value,
+    message: form.elements.message.value
+};
+
+const errors = validate(formValues, constraints);
+
+if (errors) {
+  event.preventDefault();
+  const errorMessage = Object
+      .values(errors)
+      .map(function (fieldValues) { return fieldValues.join(', ')})
+      .join("\n");
+
+  alert(errorMessage);
 }
+}, false);
