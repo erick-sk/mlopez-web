@@ -76,7 +76,7 @@ img {
 /* HEADER */
 
 .header {
-  background-image: url(../img/img_01.png);
+  background-image: url(../img/cover.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -124,7 +124,7 @@ img {
   }
 
   .header--container--nav nav a:hover {
-    border-bottom: 1px solid var(--color-white);
+    border-bottom: 1px solid var(--color-primary);
   }
 
   .nav-1 {
@@ -448,15 +448,19 @@ p {
 }
 
 @media (min-width: 780px) {
+  .adviser--div img {
+    height: 25rem;
+  }
   .adviser--div h3 {
     margin-top: 1.5rem;
     font-size: 2.5rem;
   }
+
   .adviser--div p {
     font-size: 1.8rem;
   }
   .adviser--div ul li {
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 }
 
@@ -568,6 +572,10 @@ p {
 .card-body span {
   font-weight: 700;
 }
+
+.card-title--p__active {
+  color: #fdd000 !important;
+}
 @media (min-width: 480px) {
   .card {
     padding: 2rem;
@@ -594,11 +602,14 @@ p {
   .card-body h5 {
     text-align: left;
   }
+  .card-body p {
+    font-size: 1.3rem;
+  }
   .card:last-of-type {
     margin-right: 0;
   }
   .content2 {
-    height: 40rem;
+    height: 45rem;
   }
   .group-2 {
     display: flex;
@@ -896,7 +907,7 @@ blockquote::before {
     height: 22rem;
   }
   blockquote {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .testimonials h3 {
@@ -914,6 +925,12 @@ blockquote::before {
     height: 0.4rem;
     background-color: var(--color-white);
     margin-top: 0.5rem;
+  }
+  .testimonial--1 {
+    height: 20rem;
+  }
+  .testimonial--2 {
+    height: 25rem;
   }
 }
 
@@ -948,18 +965,28 @@ blockquote::before {
 }
 .contact--form--input {
   width: 100%;
+  font-size: 2rem;
   outline: none;
   margin-bottom: 1rem;
   padding: 1rem 0;
   border: 0.2rem solid var(--color-primary);
 }
 
+.contact--form--input::placeholder {
+  padding-left: 1rem;
+}
+
 .contact--form textarea {
   border: 0.2rem solid var(--color-primary);
   height: 15rem;
-  width: 100%;
-}
+  font-size: 2rem;
 
+  width: 100%;
+  outline: none;
+}
+.contact--form textarea::placeholder {
+  padding: 1rem 0 0 1rem;
+}
 /* LOCATION */
 
 .location {
@@ -1101,6 +1128,10 @@ iframe {
   width: 2.5rem;
   height: 2.5rem;
 }
+.footer--navbar--nav--info p {
+  line-height: 2;
+  font-size: 1.5rem;
+}
 
 @media (min-width: 780px) {
   .info-3 {
@@ -1120,6 +1151,10 @@ iframe {
   }
   .footer--navbar--nav--info p {
     font-size: 2rem;
+  }
+  .footer--navbar--nav--info p {
+    line-height: 1.5;
+    font-size: 1.5rem;
   }
 }
 
