@@ -109,6 +109,9 @@ nav.nav-3 a {
   display: block;
   padding: 1rem 0;
 }
+.mobile-menu i {
+  color: var(--color-white);
+}
 
 #nav:target {
   margin-bottom: 5rem;
