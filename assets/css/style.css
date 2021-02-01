@@ -587,7 +587,8 @@ p {
 }
 
 .card-title--p__active {
-  color: #fdd000 !important;
+  color: var(--color-primary) !important;
+  font-weight: bold;
 }
 @media (min-width: 480px) {
   .card {
@@ -622,7 +623,7 @@ p {
     margin-right: 0;
   }
   .content2 {
-    height: 45rem;
+    height: 50rem;
   }
   .group-2 {
     display: flex;
@@ -697,7 +698,7 @@ p {
   margin-bottom: 2rem;
 }
 .areas--div--text ul li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .areas--div--text a {
@@ -758,6 +759,10 @@ p {
     font-size: 4rem;
   }
   .areas--div--text p {
+    font-size: 1.8rem;
+  }
+
+  .areas--div--text ul li {
     font-size: 1.8rem;
   }
 }
@@ -978,7 +983,7 @@ blockquote::before {
 }
 .contact--form--input {
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.8rem;
   outline: none;
   margin-bottom: 1rem;
   padding: 1rem 0;
@@ -992,7 +997,7 @@ blockquote::before {
 .contact--form textarea {
   border: 0.2rem solid var(--color-primary);
   height: 15rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
 
   width: 100%;
   outline: none;
