@@ -166,6 +166,10 @@ nav.nav-3 a {
   width: 20rem;
 }
 @media (min-width: 780px) {
+  .header--container--nav--img {
+    width: 25rem;
+  }
+
   .nav-2 {
     visibility: visible;
     margin: 1rem 0;
