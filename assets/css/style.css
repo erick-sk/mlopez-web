@@ -151,7 +151,9 @@ nav.nav-3 a {
   text-align: center;
   /* padding: 20px; */
 }
-
+.header--container--nav--img {
+  width: 20rem;
+}
 @media (min-width: 780px) {
   .nav-2 {
     visibility: visible;
