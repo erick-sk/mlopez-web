@@ -113,7 +113,7 @@ img {
 /* HEADER */
 
 .header {
-  background-image: url(../img/cover.jpg);
+  background-image: url(../img/cover.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -464,7 +464,7 @@ p {
 /* STATISTICS */
 
 .statistics {
-  background-image: url(../img/statisctics_1.jpg);
+  background-image: url(../img/statisctics_1.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1267,7 +1267,7 @@ p {
 /* TESTIMONIALS */
 
 .testimonials {
-  background-image: url(../img/testimoniales.jpg);
+  background-image: url(../img/testimoniales.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
