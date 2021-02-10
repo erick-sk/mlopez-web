@@ -39,6 +39,43 @@ img {
   margin: 0 auto;
 }
 
+.float {
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  bottom: 4rem;
+  right: 3rem;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 1.6rem;
+}
+
+.float-2 {
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  bottom: 9.5rem;
+  right: 3rem;
+  background-color: rgb(16, 16, 233);
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 2rem;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 200;
+}
+
+.my-float-2 {
+  margin-top: 1.6rem;
+}
 /* ****************************** */
 /* BUTTONS */
 
