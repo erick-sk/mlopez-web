@@ -25,30 +25,54 @@
       src="https://kit.fontawesome.com/d54096805e.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-    />
+
     <a
-      href="https://api.whatsapp.com/send?phone=51958461462&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+      href="https://api.whatsapp.com/send?phone=51960788141&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
       class="float"
       target="_blank"
     >
       <i class="fa fa-whatsapp my-float"></i>
     </a>
-
     <a
-      href="https://www.facebook.com/MLopezAbogadosyConsultores"
+      href="tel:51960788141"
       class="float-2"
-      target="_blank"
+      target="_blank" title="Contáctame por Teléfono"
     >
-      <i class="fa fa-facebook my-float-2"></i>
+      <i class="fas fa-phone-alt my-float-2"></i>
     </a>
+
+  
 
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    xfbml            : true,
+    version          : 'v9.0'
+  });
+};
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution="install_email"
+  page_id="111189230608527"
+  theme_color="#0A7CFF"
+    logged_in_greeting="Hola! Gracias por comunicarte con nosotros, &#xbf;C&#xf3;mo podemos servirte? "
+    logged_out_greeting="Hola! Gracias por comunicarte con nosotros, &#xbf;C&#xf3;mo podemos servirte? ">
+</div>
     <header class="header">
       <div class="header--container container">
         <div class="header--container--nav">
@@ -791,7 +815,9 @@
               que se presentan en el mundo empresarial. Excelente trabajo.
             </blockquote>
 
-            <p class="testimonials--div--text--p__active"></p>
+            <p class="testimonials--div--text--p__active">
+              Allen Saavedra - CEO Allen Dostmen
+            </p>
           </div>
         </div>
       </div>
@@ -801,8 +827,7 @@
       <div class="contact contact-1" id="contact">
         <h3>CONTACTO</h3>
 
-        <form class="contact--form" method="post" action="subscriberform.php">
-          <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
+        <form class="contact--form" action="https://getform.io/f/4392d14e-9b9f-441b-8fcb-931c7ea23f21" method="POST">
           <p>Agenda una reunión con nosotros</p>
           <div>
             <input
@@ -908,8 +933,10 @@
           </nav>
           <div class="footer--navbar--location info-3">
             <div class="footer--navbar--nav--info">
-              <img src="assets/img/icon_cursor.svg" alt="icon cursor" />
-              <p>Av. Grau N° 1692, Piura 20001 – Al costado de Casinelli.</p>
+              <p class="footer--navbar--nav--info__active">Contacto</p>
+
+              <!-- <img src="assets/img/icon_cursor.svg" alt="icon cursor" />
+              <p>Av. Grau N° 1692, Piura 20001 – Al costado de Casinelli.</p> -->
             </div>
             <div class="footer--navbar--nav--info">
               <img src="assets/img/clock.svg" alt="icon clock" />
@@ -954,14 +981,15 @@
           </a>
         </div>
       </div>
-    </footer>
+
+     
     <!-- FOOTER -->
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js"></script> -->
   </body>
 </html>
